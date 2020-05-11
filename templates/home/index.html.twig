@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome to Symfony 5 Playground!{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+{% endblock %}
+
+{% block body %}
+
+<main role="main" class="container">
+    <div class="mt-5">
+        <h1>Symfony 5 Playground</h1>
+        <p class="lead">This small project is meant to be used to practice various Symfony subjects.</p>
+        <p>Here is what you'll find here:</p>
+        <ul>
+            <li>Preconfigured SQLite Database</li>
+            <li>Basic Product Doctrine Entity</li>
+            <li>Basic HomeController (Yes it's me :-) )</li>
+        </ul>
+        <p>To get started just setup the database by running this command</p>
+        <code>php bin/console doctrine:migrations:migrate</code>
+    </div>
+</main><!-- /.container -->
+{% endblock %}
